@@ -1,4 +1,5 @@
 // utils 
+@import './utils/breakpoints';
 @import './utils/vars';
 @import './utils/_visually-hidden';
 @import './utils/placeholders';
@@ -20,12 +21,12 @@
 @import './components/logo';
 @import './components/modal-form';
 @import './components/form-footer';
+@import './components/mobile-menu';
 
 
 // layouts
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/main';
 @import './layouts/asset';
 @import './layouts/works';
 @import './layouts/team';

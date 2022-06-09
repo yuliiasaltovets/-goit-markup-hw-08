@@ -1,4 +1,52 @@
- main button
+// button mobile
+
+.menu-button {
+    display: inline-flex;
+    margin-left: 276px;
+    border: none;
+    background-color: transparent;
+
+    z-index: 10;
+
+    @include mq(tablet) {
+        display: none;
+    }
+    @include mq (desktop) {
+        display: none;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+.menu-button.is-open .icon-close {
+    display: block;
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    // background-color: #FFFFFF;
+    // padding: 20px;
+    // text-align: center;
+    // font-size: 20px;
+
+    &.is-open{
+        display: block;
+    }
+}
+@include mq (mobile-only) {
+    .backdrop {
+        z-index: 100;
+    }
+}
+//  main button
 .main-btn {
 
     // @extend %main-btn;

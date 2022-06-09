@@ -18,6 +18,57 @@
     <header class="header">
         <div class="container header-container">
             <a class="logo" href="./index.html">Web<span class="logo logo--dark">Studio</span></a>
+            <button type="button" class="menu-button"
+            aria-expanded="true"
+            aria-controls="menu-container"
+            data-menu-button >
+                <svg width="40" height="40"
+                    
+                    aria-label="Переключатель мобильного меню"
+                >
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px-1"></use>
+                    <use class="icon-close" href="./images/icons.svg#icon-close_40px-2"></use>
+                </svg>
+            </button>
+            <div class="menu-container backdrop" id="menu-container" data-menu>
+                <!--Мобильное меню-->
+                <div class="mobile-menu">
+                    <ul class="mobile-menu_nav">
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Студия</a>
+                        </li>
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu_contacts">
+                        <li class="mobile-menu_contacts-item">
+                            <a href="tel:+380961111111" class="mobile-menu_contacts-link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu_contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mobile-menu_contacts-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu_socials">
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         
             <!--Навигация-->
             <nav class="navigation">   
                 <ul class="navigation__list">
@@ -42,16 +93,16 @@
                     </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
-
+        
     </header>
     <!-- Уникальный контент стр-->
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container overlay">
                 <h1 class="hero__title">Эффективные решения </br> для вашего бизнеса</h1>
                 <button class="main-btn" data-modal-open type="button">Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
         </div>
         <section class="asset">
             <div class="container">
@@ -102,7 +153,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="backdrop is-hidden" data-modal>
+            <!-- <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button data-modal-close class="modal-btn">
                         <svg width="11" heidht="11">
@@ -143,7 +194,7 @@
                              <input class="modal-form__checkbox" type="checkbox" name="checkbox" id="checkbox" /> 
                              <span class="modal-form__custom-checkbox">
                              <svg class="modal-form__custom-checkbox-icon" width="16" height="15" >
-                                 <use href="./images/icons.svg#icon-Vector-3" ></use>
+                                 <use href="./images/icons.svg#icon-Vector3" ></use>
                              </svg>
                             </span>
                              Соглашаюсь с рассылкой и принимаю 
@@ -156,7 +207,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="work">
             <div class="container">
                 <h2 class="work__title" >Чем мы занимаемся</h2>
@@ -332,7 +383,7 @@
                 </ul>
             </div>
         </section>
-        <section class="client-container">
+        <!-- <section class="client-container">
             <div class="container">
                 <h2 class="client-container__title">Постоянные клиенты</h2>
                 <ul class="clients">
@@ -386,12 +437,12 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--Футер-->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container">
             <div>
             <a class="logo" href="./index.html">Web<span class="logo logo--light">Studio</span></a>
@@ -457,8 +508,11 @@
 
         </div>
        </div>
-    </footer>
-    <script src="./js/modal.js"></script>
+    </footer> -->
+
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menubtn.js"></script>
+    
 </body>
 
 </html>

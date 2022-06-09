@@ -1,8 +1,24 @@
 /* чем мы занимаемся */
 
+
+
 .work {
     padding-bottom: 94px;
+    display: flex;
+    @include mq (mobile){
+        
+        display:none;
+    }
+        @include mq (tablet) {
+            
+            display: none;
+        }
+                 @include mq (desktop) {
+                     display: block;
+                     
+                 }
 }
+
 
 .work__title {
     font-weight: 700;
