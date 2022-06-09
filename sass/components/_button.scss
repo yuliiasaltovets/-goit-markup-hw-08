@@ -8,10 +8,10 @@
 
     z-index: 10;
 
-    @include mq(tablet) {
+    @include tablet-only {
         display: none;
     }
-    @include mq (desktop) {
+    @include desktop-only {
         display: none;
     }
 }
@@ -41,7 +41,7 @@
         display: block;
     }
 }
-@include mq (mobile-only) {
+@include mobile-only {
     .backdrop {
         z-index: 100;
     }

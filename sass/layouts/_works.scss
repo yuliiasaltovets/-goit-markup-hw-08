@@ -5,17 +5,17 @@
 .work {
     padding-bottom: 94px;
     display: flex;
-    @include mq (mobile){
+    @include mobile-only {
         
         display:none;
     }
 
-    @include mq (tablet) {
+    @include tablet-only {
             
         display: none;
     }
 
-    @include mq (desktop) {
+    @include desktop-only {
 
         display: block;
                      

@@ -15,17 +15,17 @@
 /* шапка контакты */
 .header__contact {
 
-    @include mq (mobile-only) {
+    @include mobile-only {
         display: none;
     }
 
-    @include mq (tablet-only) {
+    @include tablet-only {
       display: block;
     
     
     }
 
-    @include mq (desktop) {
+    @include desktop-only {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -45,12 +45,12 @@
     text-decoration: none;
     list-style: none;
    
-    @include mq (tablet-only) {
+    @include tablet-only {
         &:not(:last-child) {
             margin-bottom: 10px;
         }
     }
-    @include mq (desktop) {
+    @include desktop-only {
 
     font-weight: 500;
     font-size: 14px;
@@ -98,17 +98,17 @@
 .navigation {
    
 
-    @include mq (mobile-only) {
+    @include mobile-only {
         display: none;
     }
     
-    @include mq (tablet) {
+    @include tablet-only {
         display: flex;
         align-items: center;
         margin-left: 88px;
     }
 
-    @include mq (desktop) {
+    @include desktop-only {
         display: flex;
         align-items: center;
          margin-left: 93px;

@@ -1,7 +1,7 @@
 /* постоянные клиенты */
 
 .client-container {
-    @include mq (mobile-only) {
+    @include mobile-only {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 60px;
@@ -11,10 +11,10 @@
         text-align: center;
     }
 
-    @include mq (tablet-only) {}
+    @include tablet-only {}
 
 
-    @include mq (desktop) {
+    @include desktop-only {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 94px;
