@@ -9,14 +9,17 @@
         
         display:none;
     }
-        @include mq (tablet) {
+
+    @include mq (tablet) {
             
-            display: none;
-        }
-                 @include mq (desktop) {
-                     display: block;
+        display: none;
+    }
+
+    @include mq (desktop) {
+
+        display: block;
                      
-                 }
+    }
 }
 
 
