@@ -1033,6 +1033,12 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
+  .asset__list {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .asset__list {
     margin-top: 0px;
@@ -1300,11 +1306,23 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 480px) and (max-width: 767px) {
+  .team {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F5F4FA;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    width: 768px;
   }
 }
 
@@ -1364,6 +1382,7 @@ address {
         flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    background-color: #F5F4FA;
   }
 }
 
