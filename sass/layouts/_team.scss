@@ -11,12 +11,14 @@
     @include tablet-only {
         padding-top: 60px;
         padding-bottom: 60px;
-        }
+        background-color: #F5F4FA;
+    }
+
     @include desktop-only {
         background-color: #F5F4FA;
         padding-top: 94px;
         padding-bottom: 94px;
-        }
+    }
 }
 
 .team__title {
@@ -60,7 +62,9 @@
     @include tablet-only {
        display: flex;
        flex-wrap: wrap;
-
+        margin-top: -30px;
+        margin-left: -30px;
+        
     }
 
 
@@ -75,9 +79,9 @@
        
 
     @include mobile-only {
-            // &:not(:last-child){
-            //     margin-bottom: 30px;
-            // }
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
             width: 450px;
             background-color: #ffffff;
             box-sizing: border-box;
@@ -90,9 +94,10 @@
     }
 
     @include tablet-only {
-          
            
-            flex-basis: 50%;
+            margin-top: 30px;
+            margin-left: 30px;
+            flex-basis: calc(100% / 2 - 30px);
             background-color: #ffffff;
             box-sizing: border-box;
             border: 1px solid #eeeeee;

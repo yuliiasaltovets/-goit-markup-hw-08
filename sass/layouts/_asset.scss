@@ -20,15 +20,20 @@
 }  
 
 .asset__list {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
-    list-style: none;
+    @include mobile-only {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        list-style: none;
+       
+    }
+   
     
     @include tablet-only {
         display: flex;
         flex-wrap: wrap;
-
+        margin-top: -30px;
+        margin-left: -30px;
 
     }
     @include desktop-only {
@@ -42,10 +47,7 @@
 }
 
 .asset__item {
-    // width: 270px;
-    // padding-right: auto;
-    // padding-left: auto;
-    // margin-right: 30px;
+   
     @include mobile-only {
         width: 450px;
         padding-right: auto;
@@ -54,7 +56,9 @@
     }
 
     @include tablet-only {
-        flex-basis: 50%;
+        margin-top: 30px;
+        margin-left: 30px;
+        flex-basis: calc(100% / 2 - 30px);
     
     }
 
@@ -69,13 +73,6 @@
 
 
 .asset__link {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // background-color: #F5F4FA;
-    // width: 270px;
-    // height: 120px;
-    // margin-bottom: 30px;
 
     @include mobile-only {
         display: flex;
@@ -91,8 +88,6 @@
         align-items: center;
         justify-content: center;
         background-color: #F5F4FA;
-        width: 354px;
-        height: 120px;
         margin-bottom: 30px;
     }
 
@@ -108,16 +103,7 @@
 }
 
 .asset__title {
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
-    
-    // text-transform: uppercase;
-    // margin-top: 0px;
-    // margin-bottom: 10px;
-
-    // color: var(--main-clr-);
+  
     @include mobile-only {
         display: flex;
         text-align: center;
@@ -168,22 +154,22 @@
      
     @include mobile-only {
         font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: #757575;
-            margin-top: 0px;
-            margin-bottom: 30px;  
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin-top: 0px;
+        margin-bottom: 30px;  
     }
 
     @include tablet-only {
-            width: 354px;
-            height: 75px;
+        width: 354px;
+        height: 75px;
 
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: #757575;
-            margin-top: 0px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin-top: 0px;
     }
 
     @include desktop-only {
