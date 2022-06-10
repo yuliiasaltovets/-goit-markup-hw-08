@@ -146,6 +146,7 @@ address {
   margin-left: auto;
   border: none;
   background-color: transparent;
+  padding: 0;
   z-index: 10;
 }
 
