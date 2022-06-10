@@ -25,19 +25,17 @@
 }
 .portfolio {
     @include mobile-only {
-        min-width: 320px;
-        max-width: 480px;
-        width: 480px;
+        
         padding-top: 60px;
         padding-bottom: 60px;
     }
     @include tablet-only {
-        max-width: 768px;
+       
         padding-top: 60px;
         padding-bottom: 60px;
     }
     @include desktop-only {
-        max-width: 1200px;
+      
         padding-top: 100px;
         padding-bottom: 94px;
         

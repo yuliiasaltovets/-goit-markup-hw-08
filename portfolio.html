@@ -16,6 +16,55 @@
     <header class="header" >
         <div class="container header-container">
             <a class="logo" href="./index.html">Web<span class="logo logo--dark">Studio</span></a>
+
+            <button type="button" class="menu-button" aria-expanded="true" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px-1"></use>
+                    <use class="icon-close" href="./images/icons.svg#icon-close_40px-2"></use>
+                </svg>
+            </button>
+            <div class="menu-container backdrop" id="menu-container" data-menu>
+                <!--Мобильное меню-->
+                <div class="mobile-menu">
+                    <ul class="mobile-menu_nav">
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Студия</a>
+                        </li>
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu_item">
+                            <a href="" class="mobile-menu_link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu_contacts">
+                        <li class="mobile-menu_contacts-item">
+                            <a href="tel:+380961111111" class="mobile-menu_contacts-link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu_contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mobile-menu_contacts-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu_socials">
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu_socials-item">
+                            <a href="" class="mobile-menu_socials-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+
             <!--Навигация -->
              <nav class="navigation">
                 <ul class="navigation__list">
@@ -31,13 +80,13 @@
                  <ul class="header__contact">
                     <li class="header__list">
                             <a class="header__link" href="mailto:info@devstudio.com">
-                                <svg class="header__icon" width="16" height="12">
+                                <svg class="header__icon header__icon-mail" width="16" height="12">
                                     <use href="./images/icons.svg#icon-envelope" rel="noopener noreferrer"></use>
                                 </svg>info@devstudio.com</a>
                         </li>
                     <li class="header__list">
                             <a class="header__link" href="tel:+380961111111">
-                                <svg class="header__icon" width="10" height="16">
+                                <svg class="header__icon header__icon-phone" width="10" height="16">
                                     <use href="./images/icons.svg#icon-smartphone" rel="noopener noreferrer"></use>
                                 </svg>+38 096 111 11 11</a>
                         </li>
@@ -249,5 +298,6 @@
             </div>
         </div>
     </footer> 
+    <script src="./js/menubtn.js"></script>
 </body>
 </html>
