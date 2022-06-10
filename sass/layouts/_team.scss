@@ -4,11 +4,10 @@
     @include mobile-only {
         padding-top: 60px;
         padding-bottom: 60px;
+        min-width: 480px;
 
         background-color: #F5F4FA;
-        @media screen and (min-width: 480px) and (max-width: 767px) {
-                width: 480px;
-            }
+      
       
         }
     
@@ -16,17 +15,18 @@
     @include tablet-only {
         padding-top: 60px;
         padding-bottom: 60px;
-        background-color: #F5F4FA;
 
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-                width: 768px;
-            }
+        background-color: #F5F4FA;
+       
     }
 
     @include desktop-only {
-        background-color: #F5F4FA;
+        
         padding-top: 94px;
         padding-bottom: 94px;
+        background-color: #F5F4FA;
+       
+
     }
 }
 
@@ -63,6 +63,8 @@
         color: var(--main-clr-);
         margin: 0;
         margin-bottom: 50px;
+
+      
     }
    
 }
