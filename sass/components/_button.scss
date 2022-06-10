@@ -1,21 +1,33 @@
 // button mobile
 
 .menu-button {
-    display: inline-flex;
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-
-    z-index: 10;
-
+        display: inline-flex;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    
+        z-index: 10;
+   
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
     @include tablet-only {
         display: none;
     }
     @include desktop-only {
         display: none;
     }
+         &:hover {
+            fill: #2196F3;
+            
+         }
+         &:focus {
+            fill: #2196F3;
+           
+         }
+
 }
+
 
 .menu-button .icon-close {
     display: none;
@@ -28,7 +40,7 @@
 }
 
 .menu-container {
-    display: none;
+display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -37,6 +49,8 @@
     &.is-open{
         display: block;
     }
+
+        
 }
 @include mobile-only {
     .backdrop {
