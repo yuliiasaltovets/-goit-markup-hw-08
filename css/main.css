@@ -97,6 +97,7 @@ address {
   .portfolio {
     min-width: 320px;
     max-width: 480px;
+    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -115,6 +116,18 @@ address {
     max-width: 1200px;
     padding-top: 100px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -320,6 +333,7 @@ address {
         flex-wrap: wrap;
     -ms-flex-preferred-size: 33,3333%;
         flex-basis: 33,3333%;
+    margin-bottom: 40px;
   }
 }
 
@@ -357,7 +371,6 @@ address {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .list-button__portfolio {
-    margin-bottom: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -365,6 +378,7 @@ address {
         flex-wrap: wrap;
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
+    margin-bottom: 15px;
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
@@ -2105,6 +2119,39 @@ address {
 }
 
 /* список карточек портфолио */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__flex-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: calc(100% / 2);
+            flex-direction: calc(100% / 2);
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+  .card__flex-element:hover {
+    cursor: pointer;
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .card__flex-element {
     margin-left: 30px;
@@ -2178,6 +2225,44 @@ address {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .card__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card__text:focus {
+    opacity: 1;
+  }
+  .card__text:hover {
+    opacity: 1;
+  }
 }
 
 .card__text:focus {
