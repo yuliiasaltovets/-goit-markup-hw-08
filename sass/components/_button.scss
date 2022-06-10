@@ -167,14 +167,15 @@
             max-width: 480px;
 
             display: flex;
-                flex-wrap: wrap;
-                flex-basis: (100% / 3);
+            flex-wrap: wrap;
+            flex-basis: 33,3333%;
     }
     @include tablet-only {
         list-style: none;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 30px;
     }
 
     @include desktop-only {
