@@ -1,5 +1,7 @@
 
 .card {
+  
+
     @include tablet-only {
         display: flex;
         flex-wrap: wrap;

@@ -235,7 +235,31 @@
 
                 <ul class="team__card">
                     <li class="team__img">
-                        <img src="./images/imgk1.jpg" alt="ИгорьДемьяненко" width="270">
+                        <picture>
+                            <!--десктоп-->
+                            <source media="(min-width: 1200px )"
+                            srcset="./images/imgk1.jpg 1x,                                                              
+                                    ./images/desk-1@2x.jpg 2x" 
+                            type="image/jpg" />
+                            <!--таблетка-->
+                            <source media="(min-width: 768px )" 
+                            srcset="./images/tab-1.jpg 1x,                                                              
+                                    ./images/tab-1@2x.jpg 2x" 
+                            type="image/jpg" />
+                            <!--мобильный экран-->
+                            <source 
+                            media="(max-width: 767px )" 
+                            srcset="./images/hw8-1sm.jpg 1x,
+                                    ./images/hw8-1sm@2x.jpg 2x" 
+                            type="image/jpg" />
+                            <!--дефолтное изображение-->
+                        <img 
+                            class="team__set" 
+                            src="./images/hw8-1sm.jpg" alt="ИгорьДемьяненко" 
+
+                            width="450"
+                            height="460" />
+                        </picture>
                         <div class="team__bio">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__professional">Product Designer</p>
@@ -272,7 +296,28 @@
                         </div>
                     </li>
                     <li class="team__img">
-                        <img src="./images/imgk2.jpg" alt="ОльгаРепина" width="270">
+                        <picture>
+                            <!--desktop-->
+                            <source media="(min-width: 1200px )" 
+                            srcset="./images/imgk2.jpg 1x,
+                                    ./images/desk-2@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--tablet-->
+                            <source media="(min-width: 768px )" 
+                            srcset="./images/tab-2.jpg 1x,
+                                    ./images/tab-2@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--мобильная версия-->
+                            <source 
+                            media="(max-width: 767px )" 
+                            srcset="./images/hw8-2sm.jpg 1x,
+                                    ./images/hw8-2sm@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--дефолтное изображение-->
+                        <img src="./images/hw8-2sm.jpg" alt="ОльгаРепина" 
+                        width="450"
+                        height="460">
+                        </picture>
                         <div class="team__bio">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__professional">Frontend Developer</p>
@@ -308,8 +353,32 @@
                             </ul>
                         </div>
                     </li>
+                   
                     <li class="team__img">
-                        <img src="./images/imgk3.jpg" alt="НиколайТарасов" width="270">
+                        <picture>
+                            <!--desktop-->
+                            <source 
+                            media="(min-width: 1200px )" 
+                            srcset="./images/imgk3.jpg 1x,
+                                    ./images/desk-3@2x.jpg 2x"
+                                    type="image/jpg">
+                            <!--tablet-->
+                            <source 
+                            media="(min-width: 768px )" 
+                            srcset="./images/tab-3.jpg 1x,
+                                    ./images/tab-3@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--mobile-->
+                            <source 
+                            media="(max-width: 767px )" 
+                            srcset="./images/hw8-3sm.jpg 1x,
+                                    ./images/hw8-3sm@2x.jpg 2x" 
+                            type="image/jpg">
+                            <!--defolt-->
+                        <img src="./images/hw8-3sm.jpg" alt="НиколайТарасов" 
+                        width="450"
+                        height="460">
+                        </picture>
                         <div class="team__bio">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__professional">Marketing</p>
@@ -346,7 +415,30 @@
                         </div>
                     </li>
                     <li class="team__img">
-                        <img src="./images/imgk4.jpg" alt="МихаилЕрмаков" width="270">
+                        <picture>
+                            <!--desktop-->
+                            <source 
+                            media="(min-width: 1200px )" 
+                            srcset="./images/imgk4.jpg 1x, 
+                                    ./images/desk-4@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--tablet-->
+                            <source 
+                            media="(min-width: 768px )" 
+                            srcset="./images/tab-4.jpg 1x, 
+                                    ./images/tab-4@2x.jpg 2x" 
+                                    type="image/jpg">
+                            <!--mobile-->
+                            <source 
+                            media="(max-width: 767px )" 
+                            srcset="./images/hw8-4sm.jpg 1x, 
+                                    ./images/hw8-4sm@2x.jpg 2x" 
+                                    type="image/jpg">
+                        <!--defolt-->
+                        <img src="./images/hw8-4sm.jpg" alt="МихаилЕрмаков" 
+                        width="450"
+                        height="460">
+                        </picture>
                         <div class="team__bio">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__professional">UI Designer</p>

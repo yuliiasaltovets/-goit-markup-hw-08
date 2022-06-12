@@ -12,11 +12,41 @@
     text-align: center;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/Imghero.jpg);
+        url(/images/Header-sm.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 600px;
+    @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/Header-sm@2x.jpg);
+    }
+   
+
+    @include tablet-only {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/Header-tab.jpg);
+        @media (min-divice-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(/images/Header-tab@2x.jpg);
+            }
+
+    }
+
+    @include desktop-only {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/Imghero.jpg);
+        @media (min-divice-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(/images/Header-desk@2x.jpg);
+            }
+    }
+
+   
 }
 
 
