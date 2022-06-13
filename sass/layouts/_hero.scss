@@ -7,8 +7,8 @@
     background: #2F303A;
     margin-top: 0;
     margin-bottom: 0px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 400px;
     min-width: 480px;
     @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -25,6 +25,8 @@
    
 
     @include tablet-only {
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url( ../images/Header-tab.jpg );
         @media (min-divice-pixel-ratio: 2),
@@ -37,6 +39,9 @@
     }
 
     @include desktop-only {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url( ../images/Imghero.jpg );
         @media (min-divice-pixel-ratio: 2),
@@ -69,9 +74,18 @@
 
        
     @include mobile-only {
-   
-    font-size: 26px;
-    line-height: 42px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+       
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
     
    
     }
