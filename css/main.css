@@ -343,7 +343,7 @@ address {
         flex-wrap: wrap;
     -ms-flex-preferred-size: 33,3333%;
         flex-basis: 33,3333%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 }
 
@@ -379,6 +379,14 @@ address {
   }
 }
 
+.list-button__p-btn {
+  margin-bottom: 15px;
+}
+
+.list-button__p-btn:not(:nth-child(-n+3)) {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .list-button__portfolio {
     display: -webkit-box;
@@ -388,7 +396,6 @@ address {
         flex-wrap: wrap;
     -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
-    margin-bottom: 15px;
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
